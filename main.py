@@ -20,6 +20,7 @@ async def index():
 @app.post("/crear_usuario")
 def usuario(name, id):
     database.create(id, name)
+    database.update()
 
 @app.post("/enviar_usuario")
 async def recibir_json(request: Request):

@@ -1,5 +1,4 @@
 import json, os
-import main
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 json_path = os.path.join(BASE_DIR, "estudiante.json")
@@ -21,8 +20,8 @@ class DataBase():
 
         datos[name] = dato
 
-        with open(self.archivo, "w", encoding="utf-8") as f:
-            json.dump(datos, f, indent=4, ensure_ascii=False)
+        self.update()
+
 
 
     def read(self):
@@ -37,8 +36,3 @@ class DataBase():
             del self.datos[dato]
             
         self.update()
-        
-
-
-
-
