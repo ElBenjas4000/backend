@@ -1,0 +1,19 @@
+se necesita sql & fastapi para poder funcionar
+
+(sqlite3)
+
+cmd:
+
+pip install fastapi
+pip install "uvicorn[standard]"
+pip install requests
+
+en caso de tener varias versiones usar "py -m" para lograr acceder a la usada por el sistema
+
+py -m pip install fastapi
+py -m pip install "uvicorn[standard]"
+py -m pip install requests
+
+son remasterizaciones de los archivos anteriores pero adaptados a logica sql
+
+posee archivo de prueba y visualizacion usando pyqt (motor grafico moderno de python)
